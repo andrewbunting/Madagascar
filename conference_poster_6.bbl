@@ -1,0 +1,51 @@
+\begin{thebibliography}{1}
+
+\bibitem{Henyey1964}
+L~G Henyey, J~E Forbes, and N~L Gould.
+\newblock {A New Method of Automatic Computation of Stellar Evolution.}
+\newblock {\em Astrophysical Journal}, 139:306, 1964.
+
+\bibitem{Paxton2011}
+Bill Paxton, Lars Bildsten, Aaron Dotter, Falk Herwig, Pierre Lesaffre, and
+  Frank Timmes.
+\newblock {MODULES FOR EXPERIMENTS IN STELLAR ASTROPHYSICS (MESA)}.
+\newblock {\em The Astrophysical Journal Supplement Series}, 192:3--35, 2011.
+
+\bibitem{Paxton2013}
+Bill Paxton, Matteo Cantiello, Phil Arras, Lars Bildsten, Edward~F Brown, Aaron
+  Dotter, Christopher Mankovich, M~H Montgomery, Dennis Stello, F~X Timmes, and
+  Richard Townsend.
+\newblock {MODULES FOR EXPERIMENTS IN STELLAR ASTROPHYSICS (MESA): PLANETS,
+  OSCILLATIONS, ROTATION, AND MASSIVE STARS}.
+\newblock {\em The Astrophysical Journal Supplement Series}, 208(443pp), 2013.
+
+\bibitem{Paxton2015}
+Bill Paxton, Pablo Marchant, Josiah Schwab, Evan~B Bauer, Lars Bildsten, Matteo
+  Cantiello, Luc Dessart, R~Farmer, H~Hu, N~Langer, R~H~D Townsend, Dean~M
+  Townsley, and F~X Timmes.
+\newblock {MODULES FOR EXPERIMENTS IN STELLAR ASTROPHYSICS (MESA): BINARIES,
+  PULSATIONS, AND EXPLOSIONS}.
+\newblock {\em The Astrophysical Journal Supplement Series}, 220(1):15, sep
+  2015.
+
+\bibitem{Paxton2018}
+Bill Paxton, Josiah Schwab, Evan~B Bauer, Lars Bildsten, Sergei Blinnikov, Paul
+  Duffell, R~Farmer, Jared~A Goldberg, Pablo Marchant, Elena Sorokina, Anne
+  Thoul, Richard H~D Townsend, and F~X Timmes.
+\newblock {MODULES FOR EXPERIMENTS IN STELLAR ASTROPHYSICS (MESA): CONVECTIVE
+  BOUNDARIES, ELEMENT DIFFUSION, AND MASSIVE STAR EXPLOSIONS}.
+\newblock 2018.
+
+\bibitem{Pfahl2008}
+Eric Pfahl, Phil Arras, and Bill Paxton.
+\newblock {Ellipsoidal Oscillations Induced by Substellar Companions: A
+  Prospect for the Kepler Mission}.
+\newblock {\em The Astrophysical Journal}, 679(1):783--796, may 2008.
+
+\bibitem{Terquem1998}
+C.~Terquem, J.~C.~B. Papaloizou, R.~P. Nelson, and D.~N.~C. Lin.
+\newblock {On the Tidal Interaction of a Solar‐Type Star with an Orbiting
+  Companion: Excitation of g ‐Mode Oscillation and Orbital Evolution}.
+\newblock {\em The Astrophysical Journal}, 502(2):788--801, 1998.
+
+\end{thebibliography}

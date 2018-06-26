@@ -36,6 +36,9 @@
 \usepackage{amsfonts, amsmath, amsthm, amssymb} % For math fonts, symbols and environments
 \usepackage{wrapfig} % Allows wrapping text around tables and figures
 \usepackage{xcolor}
+\usepackage{abstract}
+
+\renewcommand{\abstractnamefont}{\normalfont\Large\bfseries}
 
 \begin{document}
 
@@ -52,15 +55,15 @@
 \veryHuge \color{NavyBlue} \textbf{Stellar oscillations induced by a planetary companion} \color{Black}\\ % Title
 \Huge\textit{Going off on a tangent}\\[2cm] % Subtitle
 \huge \textbf{Andrew Bunting\textsuperscript{1}, John Papaloizou\textsuperscript{2} \& Caroline Terquem\textsuperscript{1}}\\[0.5cm] % Author(s)
-\huge \textsuperscript{1}Physics Department, University of Oxford; \textsuperscript{2}DAMPT, University of Cambridge\\[0.4cm] % University/organization
+\Large \textsuperscript{1}Physics Department, University of Oxford; \textsuperscript{2}DAMPT, University of Cambridge\\[0.4cm] % University/organization
 \Large andrew.bunting@physics.ox.ac.uk\\
 \end{minipage}
 %
 \begin{minipage}[b]{0.15\linewidth}
-\includegraphics[width=10cm]{ox_logo.png}\\
+\includegraphics[width=0.8\linewidth]{ox_logo.png}\\
 \end{minipage}
 
-\vspace{1cm} % A bit of extra whitespace between the header and poster content
+\vspace{1.0cm} % A bit of extra whitespace between the header and poster content
 
 %----------------------------------------------------------------------------------------
 
@@ -72,20 +75,19 @@
 
 \color{Navy} % Navy color for the abstract
 
-
-
+\Large
 \begin{abstract}
-
-The gravitational potential from a planet orbiting a star causes a regular perturbation which results in oscillations. These tidally induced oscillations cause changes in displacement and flux. In solving the non-adiabatic oscillation equations we found that the tangential displacement at the surface is $\sim 10^{3} - 10^{4}$ times larger than the non-adiabatic solution. This result agrees well with analytical expressions in the limit of vanishing pressure, which is approximately found at the surface. Modelling these oscillations could be used to characterise exoplanetary orbits, including determining planetary masses, and has potential for planetary detection in its own right.
-
+\large
+The gravitational potential from a planet orbiting a star causes a regular perturbation which results in oscillations in the star. These tidally induced oscillations cause changes in displacement and flux. In solving the non-adiabatic oscillation equations we found that the tangential displacement at the surface is $\sim 10^{3} - 10^{4}$ times larger than the non-adiabatic solution. This result agrees well with analytical expressions in the limit of vanishing pressure, which is approximately found at the surface. Modelling these oscillations could be used to characterise exoplanetary orbits, including determining planetary masses, and has potential for planetary detection in its own right.
+\normalsize
 \end{abstract}
-
+\normalsize
 
 %----------------------------------------------------------------------------------------
 %	INTRODUCTION
 %----------------------------------------------------------------------------------------
 
-\color{SaddleBrown} % SaddleBrown color for the introduction
+\color{Black} % SaddleBrown color for the introduction
 
 \section*{Introduction}
 
@@ -154,7 +156,7 @@ which correspond to the continuity equation, entropy equation, radiative diffusi
 
 The boundary conditions are split, two apply at the centre, and two at the surface. At the centre $\xi_{r} = 0$ and $F_{r}' = 0$ which ensure continuity. At the surface $\Delta P = 0$, ensuring that the pressure at the perturbed surface is unchanged, and $\left( 4 \frac{\Delta T}{T_{0}} - \frac{\Delta F_{r}}{F_{r_{0}}} \right) = 0$, ensuring that the star remains a blackbody emitter.
 
-The Henyey method \textsuperscript{\cite{Henyey1964}} was used to solve these equations, using a solar-type model produced using MESA \textsuperscript{\cite{Paxton2011} \cite{Paxton2013} \cite{Paxton2015} \cite{Paxton2018}} as the equilibrium background star which we perturbed.
+The Henyey method \textsuperscript{\cite{Henyey1964}} was used to solve these equations, using a solar-type model produced using MESA \textsuperscript{\cite{Paxton2018}} as the equilibrium background star which we perturbed.
 
 %------------------------------------------------
 
@@ -198,9 +200,14 @@ Both $\xi_{r}$ and $\xi_{h}$ become negative in the surface region, leading to a
 The rough analytical estimate for the ratio $\frac{\xi_{h}}{\xi_{r}} \sim \frac{r}{H_{p}}$, where $H_{p}$ is the pressure scale height gives a surface value of $5000$, which is definitely the right order of magnitude. Using the more involved expression of equation \ref{eq:V_over_xi_r}, we can get a more precise value, of $1300 \pm 100$, compared to the model's value of $1280 \pm 5$, where the errors are due to numerical scatter in the output.
 
 \begin{center}\vspace{1.0cm}
-\includegraphics[width=0.45\linewidth]{radial_map_complex}
+\includegraphics[width=0.45\linewidth]{radial_map_complex_crop}
 ~
-\includegraphics[width=0.45\linewidth]{tangential_map_complex}
+~
+~
+~
+~
+~
+\includegraphics[width=0.45\linewidth]{tangential_map_complex_crop}
 \captionof{figure}{\color{Black} A heat map showing the distribution of radial displacement ($\xi_{r}$, left, corresponding to $\sin^{2}(\theta) \cos(2 \phi + \phi_{r})$, where $\phi_{r}$ is the argument of $\xi_{r}$ at the surface) and tangential displacement ($\xi_{h}$, right, corresponding to $\sin(\theta) \cos(\theta) \cos(2 \phi)$). Blue and red correspond to the large amplitudes of opposite phase. The radial displacement has a phase lag of $47^{\circ}$, whereas the tangential displacement has a phase lag of $5^{\circ}$. The ratio of amplitudes $\frac{\xi_{h}}{\xi_{r}} \approx 10^{3}$.}
 \label{fig:maps}
 \end{center}\vspace{1.0cm}
@@ -213,14 +220,14 @@ Due to the spatial distribution of the tangential displacement (shown in figure 
 %	CONCLUSIONS
 %----------------------------------------------------------------------------------------
 
-\color{SaddleBrown} % SaddleBrown color for the conclusions to make them stand out
+\color{OrangeRed}
 
 \section*{Conclusions}
 
 \begin{itemize}
 \item Non-adiabatic effects have a strong impact upon the behaviour of oscillations in the surface layer
-\item Tangential displacement is amplified by a factor of $\sim 10^{2} - 10^{3}$ compared to the equilibrium tide case
-\item Analytical expressions using the boundary conditions agree well with the results of the numerical model
+\item Tangential displacement is amplified by a factor of $\sim 10^{2} - 10^{3}$ compared to the equilibrium tide
+\item Analytical expressions at the surface agree well with the results of the numerical model
 \item This behaviour could be utilised to characterise planetary systems, or potentially detect exoplanets
 \end{itemize}
 
@@ -237,18 +244,18 @@ The next step is to calculate the photometric and spectroscopic effects of these
  %----------------------------------------------------------------------------------------
 %	REFERENCES
 %----------------------------------------------------------------------------------------
-
+\small
 %\nocite{*} % Print all references regardless of whether they were cited in the poster or not
 \bibliographystyle{plain} % Plain referencing style
 \bibliography{library} % Use the example bibliography file sample.bib
-
+\normalsize
 %----------------------------------------------------------------------------------------
 %	ACKNOWLEDGEMENTS
 %----------------------------------------------------------------------------------------
 
 \section*{Acknowledgements}
 
-Etiam fermentum, arcu ut gravida fringilla, dolor arcu laoreet justo, ut imperdiet urna arcu a arcu. Donec nec ante a dui tempus consectetur. Cras nisi turpis, dapibus sit amet mattis sed, laoreet.
+I would like to acknowledge people for lots of things because this is the acknowledgements section.
 
 %----------------------------------------------------------------------------------------
 

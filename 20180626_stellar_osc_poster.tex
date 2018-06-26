@@ -36,9 +36,9 @@
 \usepackage{amsfonts, amsmath, amsthm, amssymb} % For math fonts, symbols and environments
 \usepackage{wrapfig} % Allows wrapping text around tables and figures
 \usepackage{xcolor}
-\usepackage{abstract}
+\usepackage{tcolorbox}
 
-\renewcommand{\abstractnamefont}{\normalfont\Large\bfseries}
+
 
 \begin{document}
 
@@ -53,7 +53,7 @@
 
 \begin{minipage}[b]{0.85\linewidth}
 \veryHuge \color{NavyBlue} \textbf{Stellar oscillations induced by a planetary companion} \color{Black}\\ % Title
-\Huge\textit{Going off on a tangent}\\[2cm] % Subtitle
+\Huge\textit{Going off on a tangent}\\[1cm] % Subtitle
 \huge \textbf{Andrew Bunting\textsuperscript{1}, John Papaloizou\textsuperscript{2} \& Caroline Terquem\textsuperscript{1}}\\[0.5cm] % Author(s)
 \Large \textsuperscript{1}Physics Department, University of Oxford; \textsuperscript{2}DAMPT, University of Cambridge\\[0.4cm] % University/organization
 \Large andrew.bunting@physics.ox.ac.uk\\
@@ -63,7 +63,7 @@
 \includegraphics[width=0.8\linewidth]{ox_logo.png}\\
 \end{minipage}
 
-\vspace{1.0cm} % A bit of extra whitespace between the header and poster content
+\vspace{0.5cm} % A bit of extra whitespace between the header and poster content
 
 %----------------------------------------------------------------------------------------
 
@@ -73,21 +73,31 @@
 %	ABSTRACT
 %----------------------------------------------------------------------------------------
 
-\color{Navy} % Navy color for the abstract
+\color{black} % Navy color for the abstract
 
+
+\begin{tcolorbox}[colframe=black,colback=blue!10!white]
+
+\vspace{0.5cm}
+
+\section*{Abstract}
 \Large
-\begin{abstract}
-\large
 The gravitational potential from a planet orbiting a star causes a regular perturbation which results in oscillations in the star. These tidally induced oscillations cause changes in displacement and flux. In solving the non-adiabatic oscillation equations we found that the tangential displacement at the surface is $\sim 10^{3} - 10^{4}$ times larger than the non-adiabatic solution. This result agrees well with analytical expressions in the limit of vanishing pressure, which is approximately found at the surface. Modelling these oscillations could be used to characterise exoplanetary orbits, including determining planetary masses, and has potential for planetary detection in its own right.
 \normalsize
-\end{abstract}
-\normalsize
+
+\vspace{0.5cm}
+
+\end{tcolorbox}
 
 %----------------------------------------------------------------------------------------
 %	INTRODUCTION
 %----------------------------------------------------------------------------------------
 
 \color{Black} % SaddleBrown color for the introduction
+
+\begin{tcolorbox}[colframe=black,colback=blue!10!white]
+
+\vspace{0.5cm}
 
 \section*{Introduction}
 
@@ -99,12 +109,20 @@ Whilst modelling this interaction for the non-adiabatic case has been undertaken
 
 This work particularly focusses upon the behaviour at the very surface, where non-adiabatic effects are prominent. Comparison between the modelled behaviour and analytical results under the conditions present at the very surface show good agreement.
 
+\vspace{0.5cm}
+
+\end{tcolorbox}
+
 
 %----------------------------------------------------------------------------------------
 %	METHOD
 %----------------------------------------------------------------------------------------
 
 \color{DarkSlateGray} % DarkSlateGray color for the rest of the content
+
+\begin{tcolorbox}[colframe=black,colback=blue!10!white]
+
+\vspace{0.5cm}
 
 \section*{Method}
 
@@ -180,11 +198,19 @@ Rearranging these, and taking $\Delta P = 0$, we get to the expression
 \end{equation}
 \normalsize
 
+\vspace{0.5cm}
+
+\end{tcolorbox}
+
 
 
 %----------------------------------------------------------------------------------------
 %	RESULTS 
 %----------------------------------------------------------------------------------------
+
+\begin{tcolorbox}[colframe=black,colback=blue!10!white]
+
+\vspace{0.5cm}
 
 \section*{Results}
 
@@ -193,21 +219,21 @@ The behaviour in the last $0.1\%$ of the stellar radius differs greatly between 
 Both $\xi_{r}$ and $\xi_{h}$ become negative in the surface region, leading to a phase shift of $90^{\circ}$ between the planetary motion and the surface response of the star. On top of this, the imaginary parts of $\xi_{r}$ is of similar magnitude to the real part, leading to an additional phase shift of $48^{\circ}$. The tangential displacement is dominated by its real part, leading to an additional phase shift of only $5^{\circ}$.
 
 \begin{center}\vspace{1cm}
-\includegraphics[width=1.0\linewidth]{poster_displacements}
+\includegraphics[width=0.95\linewidth]{poster_displacements}
 \captionof{figure}{\color{Black} A close-up of the surface of a solar-type star, showing the logarithms of the real parts of radial and tangential displacements ($\xi_{r}$ and $\xi_{h}$, respectively) for both the non-adiabatic and the adiabatic case. In the adiabatic case $\xi_{r}$ and $\xi_{h}$ are approximately similar at the surface. Taking non-adiabatic effects into account suppresses $\xi_{r}$, and greatly amplifies $\xi_{h}$ by a factor of $\sim 10^{2} - 10^{3}$.}
 \end{center}\vspace{1cm}
 
 The rough analytical estimate for the ratio $\frac{\xi_{h}}{\xi_{r}} \sim \frac{r}{H_{p}}$, where $H_{p}$ is the pressure scale height gives a surface value of $5000$, which is definitely the right order of magnitude. Using the more involved expression of equation \ref{eq:V_over_xi_r}, we can get a more precise value, of $1300 \pm 100$, compared to the model's value of $1280 \pm 5$, where the errors are due to numerical scatter in the output.
 
 \begin{center}\vspace{1.0cm}
-\includegraphics[width=0.45\linewidth]{radial_map_complex_crop}
+\includegraphics[width=0.40\linewidth]{radial_map_complex_crop_transp}
 ~
 ~
 ~
 ~
 ~
 ~
-\includegraphics[width=0.45\linewidth]{tangential_map_complex_crop}
+\includegraphics[width=0.40\linewidth]{tangential_map_complex_crop_transp}
 \captionof{figure}{\color{Black} A heat map showing the distribution of radial displacement ($\xi_{r}$, left, corresponding to $\sin^{2}(\theta) \cos(2 \phi + \phi_{r})$, where $\phi_{r}$ is the argument of $\xi_{r}$ at the surface) and tangential displacement ($\xi_{h}$, right, corresponding to $\sin(\theta) \cos(\theta) \cos(2 \phi)$). Blue and red correspond to the large amplitudes of opposite phase. The radial displacement has a phase lag of $47^{\circ}$, whereas the tangential displacement has a phase lag of $5^{\circ}$. The ratio of amplitudes $\frac{\xi_{h}}{\xi_{r}} \approx 10^{3}$.}
 \label{fig:maps}
 \end{center}\vspace{1.0cm}
@@ -215,47 +241,67 @@ The rough analytical estimate for the ratio $\frac{\xi_{h}}{\xi_{r}} \sim \frac{
 
 Due to the spatial distribution of the tangential displacement (shown in figure \ref{fig:maps}), it averages out over the disk. Therefore it does not contribute to a change in overall brightness or to the surface-averaged radial velocity. However, it would lead to a time-dependent spectroscopic signal in an oscillatory contribution to line-broadening. If this signal is detected, it could be possible to infer the mass and inclination of the planet.
 
+\vspace{0.5cm}
+
+\end{tcolorbox}
 
 %----------------------------------------------------------------------------------------
 %	CONCLUSIONS
 %----------------------------------------------------------------------------------------
 
-\color{OrangeRed}
+\color{Black}
+
+\begin{tcolorbox}[colframe=black,colback=blue!10!white]
+
+\vspace{0.5cm}
 
 \section*{Conclusions}
 
 \begin{itemize}
-\item Non-adiabatic effects have a strong impact upon the behaviour of oscillations in the surface layer
-\item Tangential displacement is amplified by a factor of $\sim 10^{2} - 10^{3}$ compared to the equilibrium tide
+\item Non-adiabatic effects have a strong impact upon the behaviour of oscillations at the surface
+\item Tangential displacement is increased by a factor of $\sim 10^{2} - 10^{3}$ compared to the equilibrium tide
 \item Analytical expressions at the surface agree well with the results of the numerical model
-\item This behaviour could be utilised to characterise planetary systems, or potentially detect exoplanets
+\item This behaviour could be utilised to characterise planetary systems, or potentially detect planets
 \end{itemize}
+\vspace{0.5cm}
 
-\color{DarkSlateGray} % Set the color back to DarkSlateGray for the rest of the content
+\end{tcolorbox}
+
+\color{Black} % Set the color back to DarkSlateGray for the rest of the content
 
 %----------------------------------------------------------------------------------------
 %	FORTHCOMING RESEARCH
 %----------------------------------------------------------------------------------------
+\begin{tcolorbox}[colframe=black,colback=blue!10!white]
 
-\section*{Forthcoming Research}
-
+\section*{Future work}
+\vspace{-0.5cm}
 The next step is to calculate the photometric and spectroscopic effects of these oscillations (both in terms of disk-averaged RV signal and time-dependent line broadening) in order to look for such signal around stars with known hot Jupiters in order to test the feasibility of this as a method.
+
+\end{tcolorbox}
 
  %----------------------------------------------------------------------------------------
 %	REFERENCES
 %----------------------------------------------------------------------------------------
+
+\begin{tcolorbox}[colframe=black,colback=blue!10!white]
 \small
 %\nocite{*} % Print all references regardless of whether they were cited in the poster or not
 \bibliographystyle{plain} % Plain referencing style
 \bibliography{library} % Use the example bibliography file sample.bib
 \normalsize
+
+\end{tcolorbox}
 %----------------------------------------------------------------------------------------
 %	ACKNOWLEDGEMENTS
 %----------------------------------------------------------------------------------------
+\begin{tcolorbox}[colframe=black,colback=blue!10!white]
 
 \section*{Acknowledgements}
 
 I would like to acknowledge people for lots of things because this is the acknowledgements section.
+
+\end{tcolorbox}
 
 %----------------------------------------------------------------------------------------
 

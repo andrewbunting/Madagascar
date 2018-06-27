@@ -2,27 +2,23 @@
 
 \bibitem{Henyey1964}
 L~G Henyey, J~E Forbes, and N~L Gould.
-\newblock {A New Method of Automatic Computation of Stellar Evolution.}
+\newblock {}.
 \newblock {\em Astrophysical Journal}, 139:306, 1964.
 
-\bibitem{Paxton2018}
-Bill Paxton, Josiah Schwab, Evan~B Bauer, Lars Bildsten, Sergei Blinnikov, Paul
-  Duffell, R~Farmer, Jared~A Goldberg, Pablo Marchant, Elena Sorokina, Anne
-  Thoul, Richard H~D Townsend, and F~X Timmes.
-\newblock {MODULES FOR EXPERIMENTS IN STELLAR ASTROPHYSICS (MESA): CONVECTIVE
-  BOUNDARIES, ELEMENT DIFFUSION, AND MASSIVE STAR EXPLOSIONS}.
-\newblock 2018.
+\bibitem{Paxton2011}
+Bill Paxton, Lars Bildsten, Aaron Dotter, Falk Herwig, Pierre Lesaffre, and
+  Frank Timmes.
+\newblock {}.
+\newblock {\em The Astrophysical Journal Supplement Series}, 192:3--35, 2011.
 
 \bibitem{Pfahl2008}
 Eric Pfahl, Phil Arras, and Bill Paxton.
-\newblock {Ellipsoidal Oscillations Induced by Substellar Companions: A
-  Prospect for the Kepler Mission}.
+\newblock {}.
 \newblock {\em The Astrophysical Journal}, 679(1):783--796, may 2008.
 
 \bibitem{Terquem1998}
 C.~Terquem, J.~C.~B. Papaloizou, R.~P. Nelson, and D.~N.~C. Lin.
-\newblock {On the Tidal Interaction of a Solar‐Type Star with an Orbiting
-  Companion: Excitation of g ‐Mode Oscillation and Orbital Evolution}.
+\newblock {}.
 \newblock {\em The Astrophysical Journal}, 502(2):788--801, 1998.
 
 \end{thebibliography}

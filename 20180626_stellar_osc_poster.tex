@@ -63,7 +63,7 @@
 \includegraphics[width=0.8\linewidth]{ox_logo.png}\\
 \end{minipage}
 
-\vspace{0.5cm} % A bit of extra whitespace between the header and poster content
+\vspace{0.0cm} % A bit of extra whitespace between the header and poster content
 
 %----------------------------------------------------------------------------------------
 
@@ -81,8 +81,8 @@
 \vspace{0.5cm}
 
 \section*{Abstract}
-\Large
-The gravitational potential from a planet orbiting a star causes a regular perturbation which results in oscillations in the star. These tidally induced oscillations cause changes in displacement and flux. In solving the non-adiabatic oscillation equations we found that the tangential displacement at the surface is $\sim 10^{3} - 10^{4}$ times larger than the non-adiabatic solution. This result agrees well with analytical expressions in the limit of vanishing pressure, which is approximately found at the surface. Modelling these oscillations could be used to characterise exoplanetary orbits, including determining planetary masses, and has potential for planetary detection in its own right.
+\large
+The gravitational potential from a planet orbiting a star causes a regular perturbation which results in oscillations in the star. In solving the non-adiabatic oscillation equations we found that the horizontal displacement at the surface is $\sim 10^{3} - 10^{4}$ times larger than the adiabatic solution. This result agrees well with analytical expressions which are valid at the surface boundary. These tidally induced oscillations cause changes in the observed brightness and radial velocity of the star. Modelling these oscillations could be used to characterise exoplanetary orbits, including determining planetary masses, and potentially for planetary detection.
 \normalsize
 
 \vspace{0.5cm}
@@ -101,11 +101,11 @@ The gravitational potential from a planet orbiting a star causes a regular pertu
 
 \section*{Introduction}
 
-Both the Radial Velocity (RV) and transit methods for detecting exoplanets have been successful, but both are limited -- characterising the planetary system's mass is a particular difficulty due to degeneracy with the inclination or the density, respectively. Understanding other ways in which the planet and the star interact could break these degeneracies.
+Both the radial velocity (RV) and transit methods for detecting exoplanets have been successful, but both are limited -- characterising the planet's mass is a particular difficulty due to degeneracy with the inclination or the density, respectively. Understanding other star-planet interactions, such as tidal oscillations, could break these degeneracies.
 
-Given their mass, size and proximity to their host star, hot Jupiters have a stronger interaction with their host star than other planets. The first-order effect of their presence is what is used to detect them in both the RV and transit method -- the motion of the star around the common centre of mass, and the light blocked by their presence respectively. The tidal potential due to the planet is a second-order effect which changes the amplitude and wavelength of the star's light.
+Given their mass, size and proximity to their host star, hot Jupiters have a stronger interaction with their host star than other planets. The first-order effect of their presence is what is used to detect them in both the RV and transit method -- the motion of the star around the common centre of mass, and the light blocked by their presence respectively. The tidal potential due to the planet is a second-order effect which deforms the star (causing material to be displaced both radially and horizontally) and changes the amplitude and wavelength of the star's light. This changes the star's observed brightness and radial velocity.
 
-Whilst modelling this interaction for the non-adiabatic case has been undertaken before \textsuperscript{\cite{Pfahl2008}}, a detailed analysis of the tangential displacement has been lacking, or has otherwise been done assuming that the change due to non-adiabaticity is small \textsuperscript{\cite{Terquem1998}}.
+Whilst modelling this interaction for the non-adiabatic case has been undertaken before \textsuperscript{\cite{Pfahl2008}}, a detailed analysis of the horizontal displacement has been lacking, or has otherwise been done assuming that the change due to non-adiabaticity is small \textsuperscript{\cite{Terquem1998}}.
 
 This work particularly focusses upon the behaviour at the very surface, where non-adiabatic effects are prominent. Comparison between the modelled behaviour and analytical results under the conditions present at the very surface show good agreement.
 
@@ -174,31 +174,32 @@ which correspond to the continuity equation, entropy equation, radiative diffusi
 
 The boundary conditions are split, two apply at the centre, and two at the surface. At the centre $\xi_{r} = 0$ and $F_{r}' = 0$ which ensure continuity. At the surface $\Delta P = 0$, ensuring that the pressure at the perturbed surface is unchanged, and $\left( 4 \frac{\Delta T}{T_{0}} - \frac{\Delta F_{r}}{F_{r_{0}}} \right) = 0$, ensuring that the star remains a blackbody emitter.
 
-The Henyey method \textsuperscript{\cite{Henyey1964}} was used to solve these equations, using a solar-type model produced using MESA \textsuperscript{\cite{Paxton2018}} as the equilibrium background star which we perturbed.
+The Henyey method \textsuperscript{\cite{Henyey1964}} was used to solve these equations, using a solar-type model produced using MESA \textsuperscript{\cite{Paxton2011}} as the equilibrium background star which we perturbed.
 
 %------------------------------------------------
 
 \subsection*{Analytical solution}
 
-For the region at the surface, where $\Delta P \approx 0$, analytical expressions for the relationships between certain variables can be calculated by making use of this.
+For the region at the surface, analytical expressions for the relationships between variables can be found.  Our analysis has produced an expression for the ratio between the horizontal and radial displacements which is fully non-adiabatic.
 
-By taking the linearised equation of motion, and introducing $\vec{\xi}_{h} = r \vec{\nabla}_{\perp} V$, we arrive at
-\small
-\begin{align}
-- \omega^{2} \rho \xi_{r} & = - \frac{\partial \Delta P}{\partial r} - \frac{l (l+1) \rho g V}{r} - \xi_{r} r^{2} \rho \frac{\partial \left( g / r^{2} \right) }{\partial r} - \rho \frac{\partial \Phi'}{\partial r}
-\\
-- \omega^{2} \rho V & = - \frac{\Delta P}{r}  -  \frac{g \rho \xi_{r}}{r} - \frac{\rho \Phi'}{r}.
-\end{align}
-\normalsize
-Rearranging these, and taking $\Delta P = 0$, we get to the expression
-\small
-\begin{equation}
-\label{eq:V_over_xi_r}
-\frac{V}{\xi_{r}} = \frac{ \frac{g}{r \omega^{2}} \left( - \frac{\partial \Delta P}{\partial r} + \rho \Phi' \left( -\frac{2}{r} + \frac{r^{2}}{g} \frac{\partial \left( g/r^{2} \right)}{\partial r} \right) \right)  }{\left( - \frac{\partial \Delta P}{\partial r} - 2 \rho \Phi' \left( \frac{1}{r} + \frac{3 g}{r^{2} \omega^{2}} \right) \right) }.
-\end{equation}
-\normalsize
+These expressions have been compared to the output produced by the numerical model, and have been found to be in agreement.
 
 \vspace{0.5cm}
+
+\end{tcolorbox}
+
+
+
+ %----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+
+\begin{tcolorbox}[colframe=black,colback=blue!10!white]
+\small
+%\nocite{*} % Print all references regardless of whether they were cited in the poster or not
+\bibliographystyle{plain} % Plain referencing style
+\bibliography{library} % Use the example bibliography file sample.bib
+\normalsize
 
 \end{tcolorbox}
 
@@ -214,32 +215,35 @@ Rearranging these, and taking $\Delta P = 0$, we get to the expression
 
 \section*{Results}
 
-The behaviour in the last $0.1\%$ of the stellar radius differs greatly between the adiabatic and non-adiabatic cases. The inclusion of non-adiabaticity leads to the radial displacement, $\xi_{r}$, being suppressed relative to the equilibrium value (by a factor of $10$), and the tangential displacement, $\xi_{h}$, is amplified (by a factor of $\sim 10^{2} - 10^{3}$).
+The results shown here are for a solar-type star, orbited by a Jupiter mass planet with a period of $4.23$ days. The behaviour in the last $0.1\%$ of the stellar radius differs greatly between the adiabatic and non-adiabatic cases. The inclusion of non-adiabaticity leads to the radial displacement, $\xi_{r}$, being suppressed relative to the equilibrium value (by a factor of $\sim 10$), and the horizontal displacement, $\xi_{h}$, is amplified (by a factor of $\sim 10^{2} - 10^{3}$).
 
-Both $\xi_{r}$ and $\xi_{h}$ become negative in the surface region, leading to a phase shift of $90^{\circ}$ between the planetary motion and the surface response of the star. On top of this, the imaginary parts of $\xi_{r}$ is of similar magnitude to the real part, leading to an additional phase shift of $48^{\circ}$. The tangential displacement is dominated by its real part, leading to an additional phase shift of only $5^{\circ}$.
+A rough estimate for the ratio $\frac{\xi_{h}}{\xi_{r}} \sim \frac{r}{H_{p}}$, where $H_{p}$ is the pressure scale height gives a surface value of $\sim 5000$, which is the right order of magnitude, as seen in figure \ref{fig:displacements}. Using the more involved expression derived in our analysis, we get the more precise value of $3200 \pm 300$, compared to the model's value of $3000 \pm 50$, where the errors are due to numerical scatter in the output.
 
 \begin{center}\vspace{1cm}
-\includegraphics[width=0.95\linewidth]{poster_displacements}
-\captionof{figure}{\color{Black} A close-up of the surface of a solar-type star, showing the logarithms of the real parts of radial and tangential displacements ($\xi_{r}$ and $\xi_{h}$, respectively) for both the non-adiabatic and the adiabatic case. In the adiabatic case $\xi_{r}$ and $\xi_{h}$ are approximately similar at the surface. Taking non-adiabatic effects into account suppresses $\xi_{r}$, and greatly amplifies $\xi_{h}$ by a factor of $\sim 10^{2} - 10^{3}$.}
+\includegraphics[width=0.98\linewidth]{poster_mod_displacements_key}
+\captionof{figure}{\color{Black} A close-up of the surface of a solar-type star, showing the logarithms of the moduli of radial and horizontal displacements ($\xi_{r}$ and $\xi_{h}$, respectively) for both the non-adiabatic and the adiabatic case (denoted by the subscript ad). In the adiabatic case $\xi_{r,ad}$ and $\xi_{h,ad}$ are approximately similar at the surface. Taking non-adiabatic effects into account suppresses $\xi_{r}$, and greatly amplifies $\xi_{h}$ by a factor of $\sim 10^{2} - 10^{3}$.}
+\label{fig:displacements}
 \end{center}\vspace{1cm}
 
-The rough analytical estimate for the ratio $\frac{\xi_{h}}{\xi_{r}} \sim \frac{r}{H_{p}}$, where $H_{p}$ is the pressure scale height gives a surface value of $5000$, which is definitely the right order of magnitude. Using the more involved expression of equation \ref{eq:V_over_xi_r}, we can get a more precise value, of $1300 \pm 100$, compared to the model's value of $1280 \pm 5$, where the errors are due to numerical scatter in the output.
+The significant departure from the adiabatic case is also seen in the phase of the surface behaviour, relative to the orbital motion. Both the radial and horizontal displacements lead the orbit, by $44^{\circ}$ and $86^{\circ}$ respectively. Because of this, any signal due to the tidal oscillations could be expected to be significantly phase-shifted relative to the orbital motion, and the photometric and spectroscopic signals themselves could be expected to have different phases as well. Such information could be useful in determining the mass of the planet causing the oscillations.
+
+%Both $\xi_{r}$ and $\xi_{h}$ become negative in the surface region, leading to a phase shift of $90^{\circ}$ between the planetary motion and the surface response of the star. On top of this, the imaginary part of $\xi_{r}$ is of similar magnitude to the real part, leading to an additional phase shift of $48^{\circ}$. The horizontal displacement is dominated by its real part, leading to an additional phase shift of only $5^{\circ}$. In this case, this leads to the radial displacement leading the orbital motion by $42^{\circ}$, and the horizontal displacement leading by $85^{\circ}$. As such, any signal, whether photometric or spectroscopic, could be expected to be significantly phase-shifted with respect to the orbital motion.
 
 \begin{center}\vspace{1.0cm}
-\includegraphics[width=0.40\linewidth]{radial_map_complex_crop_transp}
+\includegraphics[width=0.45\linewidth]{radial_map_complex_crop_transp}
 ~
 ~
 ~
 ~
 ~
 ~
-\includegraphics[width=0.40\linewidth]{tangential_map_complex_crop_transp}
-\captionof{figure}{\color{Black} A heat map showing the distribution of radial displacement ($\xi_{r}$, left, corresponding to $\sin^{2}(\theta) \cos(2 \phi + \phi_{r})$, where $\phi_{r}$ is the argument of $\xi_{r}$ at the surface) and tangential displacement ($\xi_{h}$, right, corresponding to $\sin(\theta) \cos(\theta) \cos(2 \phi)$). Blue and red correspond to the large amplitudes of opposite phase. The radial displacement has a phase lag of $47^{\circ}$, whereas the tangential displacement has a phase lag of $5^{\circ}$. The ratio of amplitudes $\frac{\xi_{h}}{\xi_{r}} \approx 10^{3}$.}
+\includegraphics[width=0.45\linewidth]{tangential_map_complex_crop_transp}
+\captionof{figure}{\color{Black} A heat map showing the distribution on the surface of the star of radial displacement ($\xi_{r}$, left, corresponding to $\sin^{2}(\theta) \cos(2 \phi + \phi_{r})$, where $\phi_{r}$ is the argument of $\xi_{r}$ at the surface) and horizontal displacement ($\xi_{h}$, right, corresponding to $\sin(\theta) \cos(\theta) \cos(2 \phi + \phi_{h})$ where $\phi_{h}$ is the argument of $\xi_{h}$ at the surface). Blue and red correspond to the large amplitudes of opposite phase. The radial displacement leads the orbital motion by $44^{\circ}$, whereas the horizontal displacement leads by $86^{\circ}$. The ratio of amplitudes $\frac{\xi_{h}}{\xi_{r}} \sim 10^{3}$.}
 \label{fig:maps}
 \end{center}\vspace{1.0cm}
 
 
-Due to the spatial distribution of the tangential displacement (shown in figure \ref{fig:maps}), it averages out over the disk. Therefore it does not contribute to a change in overall brightness or to the surface-averaged radial velocity. However, it would lead to a time-dependent spectroscopic signal in an oscillatory contribution to line-broadening. If this signal is detected, it could be possible to infer the mass and inclination of the planet.
+Due to the spatial distribution of the horizontal displacement (shown in figure \ref{fig:maps}), it averages out over the disk. Therefore it does not contribute to a change in overall brightness, and the suppression of $\xi_{r}$ implies that such variation may be difficult to find. The horizontal displacement would contribute to the radial velocity signal, however, and suggests that this signal could be larger than previously anticipated.
 
 \vspace{0.5cm}
 
@@ -257,13 +261,18 @@ Due to the spatial distribution of the tangential displacement (shown in figure 
 
 \section*{Conclusions}
 
+\large
+
 \begin{itemize}
 \item Non-adiabatic effects have a strong impact upon the behaviour of oscillations at the surface
-\item Tangential displacement is increased by a factor of $\sim 10^{2} - 10^{3}$ compared to the equilibrium tide
+\item Horizontal displacement is increased by a factor of $\sim 10^{2} - 10^{3}$ compared to the equilibrium tide
 \item Analytical expressions at the surface agree well with the results of the numerical model
-\item This behaviour could be utilised to characterise planetary systems, or potentially detect planets
+\item These oscillations would be visible as changes in brightness and radial velocity
+\item This could be used to characterise or detect planetary systems
 \end{itemize}
 \vspace{0.5cm}
+
+\normalsize
 
 \end{tcolorbox}
 
@@ -272,36 +281,14 @@ Due to the spatial distribution of the tangential displacement (shown in figure 
 %----------------------------------------------------------------------------------------
 %	FORTHCOMING RESEARCH
 %----------------------------------------------------------------------------------------
-\begin{tcolorbox}[colframe=black,colback=blue!10!white]
 
-\section*{Future work}
-\vspace{-0.5cm}
-The next step is to calculate the photometric and spectroscopic effects of these oscillations (both in terms of disk-averaged RV signal and time-dependent line broadening) in order to look for such signal around stars with known hot Jupiters in order to test the feasibility of this as a method.
 
-\end{tcolorbox}
 
- %----------------------------------------------------------------------------------------
-%	REFERENCES
-%----------------------------------------------------------------------------------------
-
-\begin{tcolorbox}[colframe=black,colback=blue!10!white]
-\small
-%\nocite{*} % Print all references regardless of whether they were cited in the poster or not
-\bibliographystyle{plain} % Plain referencing style
-\bibliography{library} % Use the example bibliography file sample.bib
-\normalsize
-
-\end{tcolorbox}
 %----------------------------------------------------------------------------------------
 %	ACKNOWLEDGEMENTS
 %----------------------------------------------------------------------------------------
-\begin{tcolorbox}[colframe=black,colback=blue!10!white]
 
-\section*{Acknowledgements}
 
-I would like to acknowledge people for lots of things because this is the acknowledgements section.
-
-\end{tcolorbox}
 
 %----------------------------------------------------------------------------------------
 

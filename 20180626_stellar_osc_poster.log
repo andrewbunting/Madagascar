@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.15)  27 JUN 2018 16:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.15)  28 JUN 2018 11:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -634,35 +634,30 @@ File: figures/ox_logo.png Graphic file (type png)
 Package pdftex.def Info: figures/ox_logo.png used on input line 63.
 (pdftex.def)             Requested size: 252.51459pt x 252.51653pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
-
- []
-
-
-Overfull \hbox (19.72723pt too wide) in paragraph at lines 54--65
+Overfull \hbox (19.72723pt too wide) in paragraph at lines 54--66
 [][] [] 
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <29.86> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 131.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 132.
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--146
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 153--155
+Underfull \hbox (badness 10000) in paragraph at lines 145--147
 
  []
 
 
-Overfull \hbox (3.88136pt too wide) detected at line 161
+Underfull \hbox (badness 10000) in paragraph at lines 154--156
+
+ []
+
+
+Overfull \hbox (3.88136pt too wide) detected at line 162
  []$[]  [] \OMS/cmsy/m/n/20.74 ^^@ [] \OML/cmm/m/it/20.74 T[] \OMS/cmsy/m/n/20.
 74 ^^@ [][] [] \OML/cmm/m/it/20.74 p[] \OT1/cmr/m/n/20.74 = 0$ []  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--163
+Underfull \hbox (badness 10000) in paragraph at lines 162--164
 
  []
 
@@ -672,17 +667,17 @@ File: figures/poster_mod_displacements_key.png Graphic file (type png)
 
 <use figures/poster_mod_displacements_key.png>
 Package pdftex.def Info: figures/poster_mod_displacements_key.png used on input
- line 223.
+ line 224.
 (pdftex.def)             Requested size: 951.4632pt x 668.18378pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 224.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 225.
 
 <figures/radial_map_complex_crop_transp.png, id=7, 719.68875pt x 719.68875pt>
 File: figures/radial_map_complex_crop_transp.png Graphic file (type png)
 
 <use figures/radial_map_complex_crop_transp.png>
 Package pdftex.def Info: figures/radial_map_complex_crop_transp.png used on inp
-ut line 233.
+ut line 234.
 (pdftex.def)             Requested size: 436.89531pt x 436.91202pt.
 
 <figures/tangential_map_complex_crop_transp.png, id=8, 719.68875pt x 715.67375p
@@ -690,16 +685,16 @@ t>
 File: figures/tangential_map_complex_crop_transp.png Graphic file (type png)
  <use figures/tangential_map_complex_crop_transp.png>
 Package pdftex.def Info: figures/tangential_map_complex_crop_transp.png used on
- input line 240.
+ input line 241.
 (pdftex.def)             Requested size: 436.89531pt x 434.47458pt.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 267.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 268.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <29.86> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 267.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 268.
  [1
 
 
@@ -708,10 +703,10 @@ map/pdftex.map} <./figures/ox_logo.png (PNG copy)> <./figures/poster_mod_displa
 cements_key.png> <./figures/radial_map_complex_crop_transp.png> <./figures/tang
 ential_map_complex_crop_transp.png>] (./20180626_stellar_osc_poster.aux) ) 
 Here is how much of TeX's memory you used:
- 13473 strings out of 493013
- 262760 string characters out of 6133343
- 379272 words of memory out of 5000000
- 16751 multiletter control sequences out of 15000+600000
+ 13472 strings out of 493013
+ 262741 string characters out of 6133343
+ 379466 words of memory out of 5000000
+ 16750 multiletter control sequences out of 15000+600000
  35365 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  54i,14n,73p,927b,555s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -725,7 +720,7 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/f
 onts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on 20180626_stellar_osc_poster.pdf (1 page, 2660766 bytes).
+Output written on 20180626_stellar_osc_poster.pdf (1 page, 2660868 bytes).
 PDF statistics:
  52 PDF objects out of 1000 (max. 8388607)
  33 compressed objects within 1 object stream
